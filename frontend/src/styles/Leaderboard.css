@@ -1,0 +1,158 @@
+.leaderboard {
+  background: rgba(17, 24, 39, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(229, 231, 235, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.leaderboard h2 {
+  font-size: 18px;
+  color: #06b6d4;
+  margin-bottom: 15px;
+  text-shadow: 0 0 15px rgba(6, 182, 212, 0.2);
+}
+
+.leaderboard-table {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.leaderboard-header {
+  display: grid;
+  grid-template-columns: 60px 1fr 120px 100px;
+  gap: 12px;
+  padding: 12px;
+  background: rgba(31, 41, 55, 0.5);
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #9ca3af;
+  text-transform: uppercase;
+  border: 1px solid rgba(75, 85, 99, 0.3);
+}
+
+.leaderboard-body {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.leaderboard-row {
+  display: grid;
+  grid-template-columns: 60px 1fr 120px 100px;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 6px;
+  align-items: center;
+  border: 1px solid rgba(75, 85, 99, 0.2);
+  transition: all 0.3s ease;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.leaderboard-row:hover {
+  background: rgba(31, 41, 55, 0.5);
+  border-color: rgba(6, 182, 212, 0.3);
+}
+
+.leaderboard-row.current-user {
+  background: rgba(6, 182, 212, 0.1);
+  border-color: rgba(6, 182, 212, 0.4);
+  font-weight: 600;
+}
+
+.col-rank {
+  font-size: 14px;
+  font-weight: 600;
+  color: #06b6d4;
+}
+
+.col-name {
+  font-size: 14px;
+  color: #e5e7eb;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.col-status {
+  display: flex;
+  justify-content: center;
+}
+
+.col-time {
+  text-align: right;
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.badge-success {
+  background: rgba(16, 185, 129, 0.2);
+  color: #a7f3d0;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.badge-pending {
+  background: rgba(251, 146, 60, 0.2);
+  color: #fdd5b1;
+  border: 1px solid rgba(251, 146, 60, 0.3);
+}
+
+.time-value {
+  font-weight: 600;
+  color: #a7f3d0;
+}
+
+.no-data {
+  text-align: center;
+  color: #9ca3af;
+  padding: 30px 20px;
+}
+
+@media (max-width: 1024px) {
+  .leaderboard-header,
+  .leaderboard-row {
+    grid-template-columns: 50px 1fr 100px;
+  }
+
+  .col-time {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .leaderboard-header,
+  .leaderboard-row {
+    grid-template-columns: 40px 1fr;
+    gap: 8px;
+  }
+
+  .col-status {
+    display: none;
+  }
+
+  .col-rank {
+    font-size: 12px;
+  }
+
+  .col-name {
+    font-size: 12px;
+  }
+}
