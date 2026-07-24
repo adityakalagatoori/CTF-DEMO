@@ -121,22 +121,26 @@ export default function Challenge({ currentUser, onLogout }) {
                 )}
 
                 <div className="instructions">
-                  <h3>📋 Instructions</h3>
-                  <ol>
-                    <li>Open this website in your browser (you're already here!)</li>
-                    <li>Right-click on the page and select "Inspect" or "Inspect Element"</li>
-                    <li>Look through the HTML source code (or use Ctrl+F / Cmd+F)</li>
-                    <li>Search for hidden comments, meta tags, or data attributes</li>
-                    <li>Find the secret word hidden in the code</li>
-                    <li>Submit it below to capture the flag</li>
-                  </ol>
+                  <h3>📋 Challenge Puzzle</h3>
+                  <div className="puzzle-box">
+                    <p className="puzzle-title">🧩 Solve This to Get the Flag:</p>
+                    <p className="puzzle-text">
+                      <strong>"In biology, we study large organic compounds made of carbon, hydrogen,
+                      oxygen, and sometimes nitrogen. These include proteins, carbohydrates, lipids, and nucleic acids.
+                      The scientific term is spelled: B-I-O-M-O-L-E-C-U-L-E-S-S
+                      (Yes, it's intentionally misspelled to test your attention to detail!)"</strong>
+                    </p>
+                  </div>
+                  <p className="puzzle-hint">💡 <strong>Stuck?</strong> Ask ChatGPT:
+                    <br/>"What are large organic compounds in biology? (Answer: BIOMOLECUESS)"</p>
                 </div>
 
                 <div className="hints">
-                  <h3>💡 Hints</h3>
-                  <p><strong>Hint 1:</strong> Use browser developer tools (F12 or Right-click → Inspect)</p>
-                  <p><strong>Hint 2:</strong> The flag might be in HTML comments, meta tags, or JavaScript</p>
-                  <p><strong>Hint 3:</strong> Try searching with Ctrl+F in the Inspector</p>
+                  <h3>🔍 How to Submit</h3>
+                  <p><strong>Step 1:</strong> Solve the puzzle → Answer is: <strong>BIOMOLECLUESS</strong></p>
+                  <p><strong>Step 2:</strong> Type the answer in the flag field below</p>
+                  <p><strong>Step 3:</strong> Click "Submit Flag" to claim your spot on the leaderboard!</p>
+                  <p><strong>⚡ Speed counts:</strong> Faster solves rank higher</p>
                 </div>
 
                 <form onSubmit={handleFlagSubmit}>
