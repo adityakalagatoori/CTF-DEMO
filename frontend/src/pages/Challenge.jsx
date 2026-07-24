@@ -121,26 +121,22 @@ export default function Challenge({ currentUser, onLogout }) {
                 )}
 
                 <div className="instructions">
-                  <h3>📋 Challenge Puzzle</h3>
+                  <h3>📋 Your Challenge</h3>
                   <div className="puzzle-box">
-                    <p className="puzzle-title">🧩 Solve This to Get the Flag:</p>
+                    <p className="puzzle-title">🧩 Solve This Puzzle:</p>
                     <p className="puzzle-text">
                       <strong>"In biology, we study large organic compounds made of carbon, hydrogen,
-                      oxygen, and sometimes nitrogen. These include proteins, carbohydrates, lipids, and nucleic acids.
-                      The scientific term is spelled: B-I-O-M-O-L-E-C-U-L-E-S-S
-                      (Yes, it's intentionally misspelled to test your attention to detail!)"</strong>
+                      oxygen, and sometimes nitrogen. Find the scientific term for these compounds."</strong>
                     </p>
                   </div>
-                  <p className="puzzle-hint">💡 <strong>Stuck?</strong> Ask ChatGPT:
-                    <br/>"What are large organic compounds in biology? (Answer: BIOMOLECUESS)"</p>
                 </div>
 
                 <div className="hints">
-                  <h3>🔍 How to Submit</h3>
-                  <p><strong>Step 1:</strong> Solve the puzzle → Answer is: <strong>BIOMOLECLUESS</strong></p>
-                  <p><strong>Step 2:</strong> Type the answer in the flag field below</p>
-                  <p><strong>Step 3:</strong> Click "Submit Flag" to claim your spot on the leaderboard!</p>
-                  <p><strong>⚡ Speed counts:</strong> Faster solves rank higher</p>
+                  <h3>💡 How to Solve & Submit</h3>
+                  <p><strong>Step 1:</strong> Use ChatGPT, Google, or ask your instructor to solve the puzzle</p>
+                  <p><strong>Step 2:</strong> Type your answer in the field below</p>
+                  <p><strong>Step 3:</strong> Click "Submit Flag" to verify your answer</p>
+                  <p><strong>⚡ Speed wins:</strong> Fastest correct submission ranks highest!</p>
                 </div>
 
                 <form onSubmit={handleFlagSubmit}>
