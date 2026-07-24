@@ -123,20 +123,21 @@ export default function Challenge({ currentUser, onLogout }) {
                 <div className="instructions">
                   <h3>📋 Your Challenge</h3>
                   <div className="puzzle-box">
-                    <p className="puzzle-title">🧩 Solve This Puzzle:</p>
+                    <p className="puzzle-title">🧩 Solve This to Find the Flag:</p>
                     <p className="puzzle-text">
-                      <strong>"In biology, we study large organic compounds made of carbon, hydrogen,
-                      oxygen, and sometimes nitrogen. Find the scientific term for these compounds."</strong>
+                      <strong>What is the scientific term for large organic compounds (like proteins, carbohydrates,
+                      lipids, and nucleic acids) that are essential to all living organisms?</strong>
                     </p>
                   </div>
                 </div>
 
                 <div className="hints">
                   <h3>💡 How to Solve & Submit</h3>
-                  <p><strong>Step 1:</strong> Use ChatGPT, Google, or ask your instructor to solve the puzzle</p>
-                  <p><strong>Step 2:</strong> Type your answer in the field below</p>
-                  <p><strong>Step 3:</strong> Click "Submit Flag" to verify your answer</p>
-                  <p><strong>⚡ Speed wins:</strong> Fastest correct submission ranks highest!</p>
+                  <p><strong>Step 1:</strong> Ask ChatGPT: "What are large organic compounds in biology called?"</p>
+                  <p><strong>Step 2:</strong> ChatGPT will give you the answer</p>
+                  <p><strong>Step 3:</strong> Use browser search (Ctrl+F or Cmd+F) to verify the answer exists on this page</p>
+                  <p><strong>Step 4:</strong> Type the answer below and click "Submit Flag"</p>
+                  <p><strong>⚡ Speed counts:</strong> Fastest correct submission = Highest rank on leaderboard!</p>
                 </div>
 
                 <form onSubmit={handleFlagSubmit}>

@@ -19,7 +19,7 @@ CREATE TABLE settings (
 
 -- Insert default settings
 INSERT INTO settings (challenge_unlocked, correct_flag)
-VALUES (FALSE, 'BIOMOLECLUESS');
+VALUES (FALSE, 'BIOMOLECULES');
 
 -- Create indexes for better performance
 CREATE INDEX idx_students_flag_found ON students(flag_found);
