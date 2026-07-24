@@ -135,9 +135,12 @@ export default function Challenge({ currentUser, onLogout }) {
                   <h3>💡 How to Solve & Submit</h3>
                   <p><strong>Step 1:</strong> Ask ChatGPT: "What are large organic compounds in biology called?"</p>
                   <p><strong>Step 2:</strong> ChatGPT will give you the answer</p>
-                  <p><strong>Step 3:</strong> Use browser search (Ctrl+F or Cmd+F) to verify the answer exists on this page</p>
-                  <p><strong>Step 4:</strong> Type the answer below and click "Submit Flag"</p>
+                  <p><strong>Step 3:</strong> Type your answer in the field below to verify it</p>
+                  <p><strong>Step 4:</strong> Click "Submit Flag" to claim your rank!</p>
                   <p><strong>⚡ Speed counts:</strong> Fastest correct submission = Highest rank on leaderboard!</p>
+                  <p style={{marginTop: '10px', fontSize: '12px', color: '#fbbf24'}}>
+                    💡 The answer you find in ChatGPT IS hidden somewhere on this page. When you submit it, the system will confirm!
+                  </p>
                 </div>
 
                 <form onSubmit={handleFlagSubmit}>
